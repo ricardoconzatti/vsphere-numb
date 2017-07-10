@@ -1,6 +1,6 @@
 # vSphere-Numb
 
-Este script é extremamente útil para migrar as interfaces de rede das máquinas virtuais de E1000 para VMXNET 3. Sei que quando é necessário efetuar esta modificação, muitos especialistas optam por editar o arquivo VMX de cada máquina virtual ou até mesmo remover a interface de rede E1000 e adicionar uma nova interface de rede VMXNET 3. Mas como todos sabem, se o MAC mudar, o sistema operacional guest irá identificar uma nova interface de rede, aí é necessário efetuar a reconfiguração do endereço IP. Dependendo da quantidade de máquinas virtuais, será muito trabalhoso (e desnecessário).
+Este script pode ser útil para verificar os números do seu ambiente VMware vSphere. O script utiliza o vSphere PowerCLI para se conectar ao vCenter Server e executar diversas ações. O script executa apenas GET, mas de qualquer forma recomendo que seja feito uma analise e entendimento do código antes de executar em ambiente de produção.
 
  - **Ações que o Script executa (números)**
 	 - Data Center
